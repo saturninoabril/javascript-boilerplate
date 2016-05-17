@@ -9,10 +9,10 @@ module.exports = {
         api: {
             allowOrigin: [frontendUrl],
             db: {
-                database: 'travis_ci_test',
+                database: 'docker-test',
                 host: 'localhost',
-                password: '',
-                user: 'postgres',
+                password: 'docker',
+                user: 'docker',
             },
             security: {
                 xdomain: {

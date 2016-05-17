@@ -2,10 +2,10 @@ module.exports = {
     apps: {
         api: {
             db: {
-                host: 'DB_HOST',
-                user: 'DB_USER',
-                password: 'DB_PASSWORD',
-                database: 'DB_NAME',
+                host: 'localhost',
+                user: 'docker',
+                password: 'docker',
+                database: 'docker-prod',
             },
             logs: {
                 app: { Console: { timestamp: true, level: 'info' } },

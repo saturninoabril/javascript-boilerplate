@@ -3,9 +3,9 @@ module.exports = {
         api: {
             db: {
                 host: 'localhost',
-                user: 'postgres',
-                password: undefined,
-                database: 'boilerplate',
+                user: 'docker',
+                password: 'docker',
+                database: 'docker-dev',
             },
             logs: {
                 app: { Console: { timestamp: true, colorize: true, level: 'info' } },

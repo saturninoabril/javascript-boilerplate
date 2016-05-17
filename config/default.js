@@ -19,11 +19,11 @@ module.exports = {
             },
             db: {
                 driver: 'pg',
-                host: 'DB_HOST',
+                host: 'localhost',
                 port: 5432,
-                user: 'DB_USER',
-                password: 'DB_PASSWORD',
-                database: 'DB_NAME',
+                user: 'docker',
+                password: 'docker',
+                database: 'docker-prod',
             },
             healthcare: {
                 internetUrl: 'http://google.com',
