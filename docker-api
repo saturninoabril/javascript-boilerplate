@@ -1,0 +1,12 @@
+FROM node:5.11.1
+
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
+
+ONBUILD COPY . /usr/src/app
+ONBUILD RUN make install
+ONBUILD RUN make test
+ONBUILD RUN make run-dev
+ONBUILD RUN make log-api-dev
+
+EXPOSE 3000
